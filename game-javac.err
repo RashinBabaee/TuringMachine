@@ -1,0 +1,24 @@
+src\cellular\CellularAutomata.java:199: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+		comboBox2.setOnAction(s -> {
+		                      ^
+src\cellular\GameView.java:70: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+	private Controller controller = new Controller(this);
+	                                               ^
+src\cellular\GameView.java:514: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+		makeBoardGame();
+		             ^
+src\cellular\Controller.java:103: warning: [unchecked] unchecked cast
+			ComboBox<String> language = (ComboBox<String>) e.getSource();
+			                                                          ^
+  required: ComboBox<String>
+  found:    Object
+src\cellular\Controller.java:104: warning: [cast] redundant cast to String
+			String selectlanguage = (String) language.getValue();
+			                        ^
+src\cellular\ControllerServer.java:28: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+	private ViewServer viewServer = new ViewServer(this);
+	                                               ^
+src\cellular\ControllerClient.java:36: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+	private ViewClient viewClient = new ViewClient(this);
+	                                               ^
+7 warnings
